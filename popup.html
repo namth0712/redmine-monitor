@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Redmine Monitor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/font/fontawesome-5.6.1/css/all.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/popup.css" />
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div id="content" class="contentWidth container-fluid pt-20 pb-20">
+        <div class="header">
+            <div class="nav-tabs-wrapper">
+                <ul class="nav nav-tabs dragscroll" id="taskTabs" role="tablist">
+                </ul>
+            </div>
+            <button type="button" class="setting-btn btn btn-outline-info"><i class="fas fa-cog"></i></button>
+        </div>
+        <div class="tab-content" id="taskContents">
+        </div>
+        <div class="setttingPanel">
+            <div class="tab-pane fade show active" id="home-panel" role="tabpanel" aria-labelledby="home-tab">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control ctrl-title" placeholder="Enter name for this task" value="" />
+                </div>
+                <div class="form-group">
+                    <label>Add redmine url to watch</label>
+                    <input type="text" class="form-control ctrl-url" placeholder="Enter redmin url" value="" />
+                </div>
+                <div class="btn-list">
+                    <button type="button" class="btn btn-primary watchBtn">Add</button>
+                    <button type="button" class="btn btn-danger float-right removeAllUrl">Clear all urls</button>
+                    <button type="button" class="btn btn-warning removeAllAlarm">Clear Alarm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/dragscroll.js"></script>
+    <script type="text/javascript" src="assets/js/popup.js"></script>
+</body>
+
+</html>
